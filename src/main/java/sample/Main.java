@@ -70,9 +70,9 @@ public class Main {
       //  tester.writeTest(new LinkedList<>(), 10000);
 
         SetSample setSample = new SetSample();
+      //  System.out.println(setSample.getCars());
 
-
-        System.out.println(setSample.getCars());
+        setSample.showMembers();
     }
 
 

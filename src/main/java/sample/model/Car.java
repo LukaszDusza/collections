@@ -2,7 +2,7 @@ package sample.model;
 
 import java.util.Objects;
 
-public class Car {
+public class Car implements Comparable<Car>{
 
     private String brand;
     private int horsePower;
@@ -44,4 +44,15 @@ public class Car {
     public int hashCode() {
         return Objects.hash(getBrand(), horsePower);
     }
+
+    @Override
+    public int compareTo(Car o) {
+        if(brand.equals(o.brand)){
+            return horsePower - o.horsePower;
+        }
+        return brand.compareTo(o.brand);
+    }
+
+
+
 }
