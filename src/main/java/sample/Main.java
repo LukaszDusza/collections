@@ -1,14 +1,12 @@
 package sample;
 
-import sample.commons.PerformanceTester;
+import sample.exercise.Exercises;
 import sample.model.Car;
-import sample.tasks.ArrayListSample;
-import sample.tasks.LinkedListSample;
-import sample.tasks.SetSample;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
@@ -69,10 +67,52 @@ public class Main {
      //   tester.writeTest(new ArrayList<>(), 10000);
       //  tester.writeTest(new LinkedList<>(), 10000);
 
-        SetSample setSample = new SetSample();
+     //   SetSample setSample = new SetSample();
       //  System.out.println(setSample.getCars());
 
-        setSample.showMembers();
+     //   setSample.showMembers();
+
+        Exercises exercises = new Exercises();
+        List<Integer> numbers = new ArrayList<>();
+
+        numbers.add(1);
+        numbers.add(12);
+        numbers.add(2);
+        numbers.add(10);
+        numbers.add(30);
+        numbers.add(24);
+        numbers.add(2);
+        numbers.add(4);
+        numbers.add(67);
+        numbers.add(12);
+        numbers.add(14);
+        numbers.add(10);
+        numbers.add(30);
+        numbers.add(24);
+        numbers.add(30);
+        numbers.add(30);
+
+      //  System.out.println(Exercises.getDividedByTree(numbers));
+      //  System.out.println(Exercises.getDividedByValue(numbers, 5));
+      //  System.out.println(Exercises.getSortedList(numbers));
+
+     //   Exercises.numberOfDuplicates(numbers);
+
+        Map<String, String> dictionary = new HashMap<>();
+
+        dictionary.put("mama", "mother");
+        dictionary.put("rower", "bike");
+        dictionary.put("dom", "house");
+
+      //  Exercises.dictionaryPolAng(dictionary,"dom");
+
+     //   Exercises.toBinary(34);
+
+        List<String> colours = exercises.randomColours(10);
+
+        int result = exercises.whichColourIndex(colours, "#973106" );
+        System.out.println(result);
+
     }
 
 
