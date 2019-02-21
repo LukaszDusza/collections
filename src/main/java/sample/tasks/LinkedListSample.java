@@ -10,7 +10,7 @@ public class LinkedListSample {
     private List<Car> cars = new LinkedList<>();
 
     public LinkedListSample() {
-        int counter = 500;
+        int counter = 2000;
         for (int i = 0; i < counter; i++) {
             this.cars.add(new Car("BMW" + counter, 230));
             this.cars.add(new Car("Audi" + counter , 290));
@@ -22,9 +22,15 @@ public class LinkedListSample {
         System.out.println(cars);
     }
 
-    public void getCar(int index) {
+    public void getCar() {
         long time = System.nanoTime();
+
      //   System.out.println(cars.get(index));
+
+        cars.get(24);
+        cars.get(138);
+        cars.get(10);
+
         System.out.println("time to get : " + (System.nanoTime() - time));
     }
 

@@ -10,11 +10,11 @@ public class ArrayListSample {
 
     public ArrayListSample() {
 
-        int counter = 500;
-        for (int i = 0; i < counter; i++) {
-            this.cars.add(new Car("BMW" + counter, 230));
-            this.cars.add(new Car("Audi" + counter , 290));
-            this.cars.add(new Car("Bugatti" + counter, 890));
+
+        for (int i = 0; i < 2000; i++) {
+            this.cars.add(new Car("BMW" + i, 230));
+            this.cars.add(new Car("Audi" + i , 290));
+            this.cars.add(new Car("Bugatti" + i, 890));
         }
 
     }
@@ -23,9 +23,15 @@ public class ArrayListSample {
         System.out.println(cars);
     }
 
-    public void getCar(int index) {
+    public void getCar() {
         long time = System.nanoTime();
-     //   System.out.println(cars.get(index));
+
+      //  System.out.println(cars.get(index));
+
+        cars.get(24);
+        cars.get(138);
+        cars.get(10);
+
         System.out.println("time to get : " + (System.nanoTime() - time));
     }
 
