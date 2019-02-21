@@ -35,5 +35,7 @@ public class SetSample {
         while (iter.hasNext()) {
             System.out.println(iter.next());
         }
+
+        System.out.println("**** **** ***** *****");
     }
 }
