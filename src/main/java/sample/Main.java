@@ -4,6 +4,7 @@ import sample.commons.PerformanceTester;
 import sample.model.Car;
 import sample.tasks.ArrayListSample;
 import sample.tasks.LinkedListSample;
+import sample.tasks.SetSample;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -22,14 +23,14 @@ public class Main {
         }
 
         /*ArrayList*/
-        System.out.println("\n ArrayList example: ");
-        ArrayListSample arrayListSample = new ArrayListSample();
+     //   System.out.println("\n ArrayList example: ");
+    //    ArrayListSample arrayListSample = new ArrayListSample();
 
       //  arrayListSample.getIndexes();
 
      //   arrayListSample.getCars();
 
-        arrayListSample.deleteCar("BMW400");
+     //   arrayListSample.deleteCar("BMW400");
 
      //   arrayListSample.getCars();
 
@@ -37,20 +38,20 @@ public class Main {
 
      //   arrayListSample.getSizeList();
 
-        arrayListSample.changeCarBrand("Bugatti", "Lamburgini");
+     //   arrayListSample.changeCarBrand("Bugatti", "Lamburgini");
 
-        arrayListSample.getCar();
+     //   arrayListSample.getCar();
 
 
         /*LinkedList*/
-        System.out.println(" \n LinkedList example:");
-        LinkedListSample linkedListSample = new LinkedListSample();
+      //  System.out.println(" \n LinkedList example:");
+     //   LinkedListSample linkedListSample = new LinkedListSample();
 
      //   linkedListSample.getIndexes();
 
      //   linkedListSample.getCars();
 
-        linkedListSample.deleteCar("BMW400");
+     //   linkedListSample.deleteCar("BMW400");
 
      //   linkedListSample.getCars();
 
@@ -58,15 +59,20 @@ public class Main {
 
      //   linkedListSample.getSizeList();
 
-        linkedListSample.changeCarBrand("Bugatti", "Lamburgini");
+      //  linkedListSample.changeCarBrand("Bugatti", "Lamburgini");
 
-        linkedListSample.getCar();
+      //  linkedListSample.getCar();
 
 
-        PerformanceTester<Car> tester = new PerformanceTester<>(Car.class);
-        tester.readTest(cars, 1000);
+      //  PerformanceTester<Car> tester = new PerformanceTester<>(Car.class);
+     //   tester.readTest(cars, 1000);
      //   tester.writeTest(new ArrayList<>(), 10000);
       //  tester.writeTest(new LinkedList<>(), 10000);
+
+        SetSample setSample = new SetSample();
+
+
+        System.out.println(setSample.getCars());
     }
 
 

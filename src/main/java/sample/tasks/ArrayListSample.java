@@ -12,9 +12,9 @@ public class ArrayListSample {
 
 
         for (int i = 0; i < 2000; i++) {
-            this.cars.add(new Car("BMW" + i, 230));
-            this.cars.add(new Car("Audi" + i , 290));
-            this.cars.add(new Car("Bugatti" + i, 890));
+            cars.add(new Car("BMW" + i, 230));
+            cars.add(new Car("Audi" + i , 290));
+            cars.add(new Car("Bugatti" + i, 890));
         }
 
     }

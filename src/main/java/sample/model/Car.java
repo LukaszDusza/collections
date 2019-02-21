@@ -31,5 +31,17 @@ public class Car {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Car)) return false;
+        Car car = (Car) o;
+        return horsePower == car.horsePower &&
+                Objects.equals(getBrand(), car.getBrand());
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBrand(), horsePower);
+    }
 }
